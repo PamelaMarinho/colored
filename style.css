@@ -1,0 +1,17 @@
+.color{
+    margin: 50px;
+}
+
+body{
+    background-color: rgb(255, 149, 0);
+}
+
+.prim{
+    background-color: aqua;
+    margin: 100px;
+}
+
+.segun{
+    background-color: rgb(238, 0, 255);
+    margin: 100px;
+}

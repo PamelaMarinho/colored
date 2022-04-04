@@ -1,13 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.color{
-    margin: 50px;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
 }
 
-body{
+:root{
+
+    --color-button: #d9d9d9;
+    --radius-angle: 15px;
+    --font-word: 22px; 
+    --font-numb: 15px
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.background{
     width: 100vw;
     height: 100vh;
-    background-color: linear-gradient(
+    background-image: linear-gradient(
         135deg,
         #009099,
         #955656
@@ -17,18 +38,22 @@ body{
 }
 
 .container{
-    width: 60%;
+    width: 50%;
     min-width: 450px;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    padding: 30px 40px;
+    padding: 10px 40px;
+    background-color: #f1f1f1;
+    border-radius: var(--radius-angle);
+    height: 18vh;
+    justify-content: space-between;
 }
 
 #main_box{
     position: relative;
-    background-color: #f2f2f2;
+    background-color: #761010;
     padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 3);
@@ -43,29 +68,50 @@ body{
     font-weight: 500;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    background-color: #d3d3d3;
+    background-color: var(--color-button);
     border: none;
     color: #2b2b2b;
     cursor: pointer;
 }
 
-.prim{
-    position: relative;
-    float: left;
+.box-nav{
     width: 20%;
-    height: 45px;
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #d3d3d3;
-    border: none;
-    color: #2b2b2b;
-    cursor: pointer;
-
+    justify-content: space-between;
 }
 
-.segun{
-    background-color: rgb(238, 0, 255);
-    margin: 100px;
+.seletor{
+    height: 45%;
+    border-radius: var(--radius-angle);
+    background-color: var(--color-button);
+    text-align: center;
+    font-size: var(--font-word); 
 }
+
+.seletor>select{
+    background-color: rgba(240, 248, 255, 0);
+    font-size: var(--font-word); 
+}
+
+select>option:focus{
+    background-color: #99008c00;
+    border-radius: var(--radius-angle);
+    
+}
+
+.button-copy{
+    background-color: var(--color-button);
+    border-radius: var(--radius-angle);
+    height: 45%;
+    font-size: var(--font-word); 
+}
+
+.button-main, .box-color{
+    background-color: var(--color-button);
+    height: 100%;
+    width: 10vw;
+    border-radius: var(--radius-angle);
+    justify-content: center;
+    align-items: center;
+    margin: auto 20px;
+}
+

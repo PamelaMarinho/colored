@@ -44,7 +44,7 @@
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    padding: 10px 40px;
+    padding: 10px 10px;
     background-color: #f1f1f1;
     border-radius: var(--radius-angle);
     height: 18vh;
@@ -105,7 +105,7 @@ select>option:focus{
     font-size: var(--font-word); 
 }
 
-.button-main, .boxColor{
+.button-main, .boxColor, #boxColor{
     background-color: var(--color-button);
     height: 100%;
     width: 10vw;
@@ -121,5 +121,5 @@ select>option:focus{
 
 .boxColor-display{
     display: flex;
-    background-color: aqua;
+
 }

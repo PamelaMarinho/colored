@@ -84,11 +84,8 @@ const pickr2 = Pickr.create({
 });
 
 function colorBox(){
-
         const box = document.getElementsByClassName('boxColor')
-        console.log(box[0])
         box[0].setAttribute('class','boxColor-display')
-        
 }
 
 

@@ -34,7 +34,6 @@
         #955656
     );
     margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -45,33 +44,10 @@
     top: 50%;
     left: 50%;
     padding: 10px 10px;
-    background-color: #f1f1f1;
+    background-color: #ebebeb;
     border-radius: var(--radius-angle);
     height: 18vh;
     justify-content: space-between;
-}
-
-#main_box{
-    position: relative;
-    background-color: #761010;
-    padding: 30px 20px;
-    border-radius: 10px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 3);
-}
-
-#main_box button{
-    position: relative;
-    float: right;
-    width: 20%;
-    height: 45px;
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--color-button);
-    border: none;
-    color: #2b2b2b;
-    cursor: pointer;
 }
 
 .box-nav{
@@ -84,16 +60,22 @@
     border-radius: var(--radius-angle);
     background-color: var(--color-button);
     text-align: center;
+    align-items: center;
     font-size: var(--font-word); 
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .seletor>select{
-    background-color: rgba(240, 248, 255, 0);
+    background-color: #d9d9d9;
     font-size: var(--font-word); 
+    font-family: 'Roboto', sans-serif;
+    border-radius: var(--radius-angle);
+    padding: 15px 10px;
 }
 
 select>option:focus{
-    background-color: #99008c00;
+    background-color: #302c2c;
     border-radius: var(--radius-angle);
     
 }
@@ -103,6 +85,10 @@ select>option:focus{
     border-radius: var(--radius-angle);
     height: 45%;
     font-size: var(--font-word); 
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    color: #2b2b2b;
+    cursor: pointer;
 }
 
 .button-main, .boxColor, #boxColor{
@@ -117,8 +103,50 @@ select>option:focus{
 
 .boxColor{
     display: none;
+
 }
 
 .boxColor-display{
     display: flex;
+
+}
+
+
+
+
+.color{
+    background-color: var(--color-button);
+    position: static;
+    height: 100%;
+    float: none;
+    border-radius: var(--radius-angle);
+   
+}
+
+.color-pickr{
+    position: relative;
+    margin: 100px;
+    background-color: #18c950;
+    float: none;
+    height: 10px;
+ 
+
+}
+
+.pcr-button{
+    position: absolute;
+    margin: -200px;
+    float: none;
+    z-index: 5;
+    height: 10px;
+}
+
+[type='color']{
+    background-color: #955656;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    float: none;
+    border-radius: var(--radius-angle);
+    border: none;
 }

@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,16 +16,16 @@
                 <div  id="boxColor">
         
                     <div class="color">
-                        <input id="cor" type="color" valur="fff">
+                        <input  onclick="getColor()" id="cor" onchange="getColor()" type="color">
+                        <input type="text" id="put">
                     </div>
                 </div>
 
-                <div  id="boxColor">
-                    <h1 class=""></h1>
-                    <div class="color">
-                       <!--  <div class="color-pickr2"/> -->
-                    </div>
+                <div class="color">
+                    <input  onclick="getColor()" id="cor" onchange="getColor()" type="color">
+                    <input type="text" id="put">
                 </div>
+            </div>
 
                 
                 <div class="button-main flex-column">
@@ -42,7 +41,7 @@
                     <div class="seletor">
                         <select  name="gradient" id="gradient">
                             <option value="linear">LINEAR</option>
-                            <option value="circular">CIRCULAR</option>
+                            <option value="circular">RADIAL</option>
                         </select>
                     </div>
     
@@ -53,7 +52,6 @@
             
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
-    <script src="main.js"></script>
+ <script src="main.js"></script>
 </body>
 </html>

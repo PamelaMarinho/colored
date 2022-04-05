@@ -8,25 +8,47 @@
     <title>Document</title>
 </head>
 <body>
-  <main class="background">
+  <main id="background">
         <div class="container flex-row">
 
             <div class="main_box flex-row">
                 
-                <div  id="boxColor">
+                <div class="boxColor">
                     <div class="color">
-                        <input type="color" value="#955656">
+                        <input type="color" id="cor1" onchange="getId(1)">
+                        <input type="text" id="put1">
                     </div>
                 </div>
 
-                <div  id="boxColor">
-                    <h1 class=""></h1>
+                <div class="boxColor">
                     <div class="color">
-      
+                        <input type="color" id="cor2" onchange="getId(2)">
+                        <input type="text" id="put2">
                     </div>
                 </div>
 
-                
+
+                <div class="boxColor">
+                    <div class="color">
+                        <input type="color" id="cor3" onchange="getId(3)">
+                        <input type="text" id="put3">
+                    </div>
+                </div>
+
+                <div class="boxColor">
+                    <div class="color">
+                        <input type="color" id="cor4" onchange="getId(4)">
+                        <input type="text" id="put4">
+                    </div>
+                </div>
+
+                <div class="boxColor">
+                    <div class="color">
+                        <input type="color" id="cor5" onchange="getId(5)">
+                        <input type="text" id="put5">
+                    </div>
+                </div>
+
                 <div class="button-main flex-column">
                     <div class="mais"><a><img src="images/mais.png" onclick="colorBox()"></img></a></div>
                 </div>
@@ -40,7 +62,7 @@
                     <div class="seletor">
                         <select  name="gradient" id="gradient">
                             <option value="linear">LINEAR</option>
-                            <option value="circular">CIRCULAR</option>
+                            <option value="circular">RADIAL</option>
                         </select>
                     </div>
     

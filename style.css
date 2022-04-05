@@ -123,3 +123,33 @@ select>option:focus{
     display: flex;
 
 }
+
+
+
+
+
+
+.color{
+    background-color: #761010;
+    position: static;
+    height: 100%;
+    float: none;
+   
+}
+
+.color-pickr{
+    position: relative;
+    margin: 100px;
+    background-color: #18c950;
+    float: none;
+    height: 10px;
+
+}
+
+.pcr-button{
+    position: absolute;
+    margin: -200px;
+    float: none;
+    z-index: 5;
+    height: 10px;
+}

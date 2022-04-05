@@ -2,6 +2,7 @@
 const pickr = Pickr.create({
     el: '.color-pickr',
     theme: 'classic', // or 'monolith', or 'nano'
+    default: '#955656', 
 
     swatches: [
         'rgba(244, 67, 54, 1)',
@@ -31,11 +32,8 @@ const pickr = Pickr.create({
         interaction: {
             hex: true,
             rgba: true,
-            hsla: true,
-            hsva: true,
             cmyk: true,
             input: true,
-            clear: true,
             save: true
         }
     }
@@ -44,6 +42,7 @@ const pickr = Pickr.create({
 const pickr2 = Pickr.create({
     el: '.color-pickr2',
     theme: 'classic', // or 'monolith', or 'nano'
+    default: '#009099',
 
     swatches: [
         'rgba(244, 67, 54, 1)',
@@ -73,11 +72,9 @@ const pickr2 = Pickr.create({
         interaction: {
             hex: true,
             rgba: true,
-            hsla: true,
-            hsva: true,
             cmyk: true,
             input: true,
-            clear: true,
+    
             save: true
         }
     }
@@ -88,4 +85,8 @@ function colorBox(){
         box[0].setAttribute('class','boxColor-display')
 }
 
-
+pickr.on('change', (color, instance) => {
+    const rgbaColor = color.toRGBA().toString(3);
+    console.log(rgbaColor)
+    document.querySelector('background').style.background = rgbaColor;
+})

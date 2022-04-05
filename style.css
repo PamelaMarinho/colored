@@ -38,7 +38,7 @@
 }
 
 .container{
-    width: 50%;
+    width: fit-content;
     min-width: 450px;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -105,7 +105,7 @@ select>option:focus{
     font-size: var(--font-word); 
 }
 
-.button-main, .box-color{
+.button-main, .boxColor{
     background-color: var(--color-button);
     height: 100%;
     width: 10vw;
@@ -115,3 +115,11 @@ select>option:focus{
     margin: auto 20px;
 }
 
+.boxColor{
+    display: none;
+}
+
+.boxColor-display{
+    display: flex;
+    background-color: aqua;
+}

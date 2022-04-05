@@ -7,6 +7,10 @@
     border: none;
 }
 
+a{
+    cursor: pointer;
+}
+
 :root{
 
     --color-button: #d9d9d9;
@@ -64,6 +68,7 @@
     align-items: center;
     font-size: var(--font-word); 
     font-family: 'Roboto', sans-serif;
+   
 
 }
 
@@ -73,6 +78,7 @@
     font-family: 'Roboto', sans-serif;
     border-radius: var(--radius-angle);
     padding: 15px 10px;
+    cursor: pointer;
 }
 
 select>option:focus{
@@ -139,12 +145,13 @@ select>option:focus{
 
 [type='color']{
     position: relative;
-    height: 18%;
+    height: 25%;
     width: 90%;
     float: none;
     border-radius: var(--radius-angle);
     border: none;
     background-color: #008f9900;
+    cursor: pointer;
 }
 
 
@@ -165,9 +172,10 @@ a:link, a:visited{
 }
 
 .fecharBox{
+    display: flex;
     color: #2b2b2b;
-    height: fit-content;
-    text-align: right;
-    position: relative;
-    right: 5%;
+    align-self: flex-end;
+    
+    width: fit-content;
+    margin: 10px 15px 0 0 ;
 }

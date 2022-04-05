@@ -111,36 +111,6 @@ select>option:focus{
 
 }
 
-
-
-
-.color{
-    background-color: var(--color-button);
-    position: static;
-    height: 100%;
-    float: none;
-    border-radius: var(--radius-angle);
-   
-}
-
-.color-pickr{
-    position: relative;
-    margin: 100px;
-    background-color: #18c950;
-    float: none;
-    height: 10px;
- 
-
-}
-
-.pcr-button{
-    position: absolute;
-    margin: -200px;
-    float: none;
-    z-index: 5;
-    height: 10px;
-}
-
 [type='color']{
     background-color: #955656;
     position: relative;

@@ -9,46 +9,49 @@
 </head>
 <body>
   <main id="background">
-        <div class="container flex-row">
+      <a id="fecha"><img src="images/view.png"></a>
+
+        <div class="container flex-row" id="container">
 
             <div class="main_box flex-row">
                 
-                <div class="boxColor flex-column">
-                    <a href="#" class="fecharBox">&times;</a>
-                    <div class="color flex-column">                
-                        <input type="text" id="put1">
+                <div class="boxColor-display-fixo">
+                    <a class="fecharBox fixo">.</a>
+                    <div class="color flex-column">
+                        <input type="text" id="put1" value="#0615e5">
                         <input type="color" id="cor1" onchange="getId(1)">
-                    
+                    </div>
+                </div>
+
+                <div class="boxColor-display-fixo">
+                    <a class="fecharBox fixo">a</a>
+                    <div class="color flex-column">
+                        <input type="text" id="put2" value="#955656">
+                        <input type="color" id="cor2" onchange="getId(2)">
                     </div>
                 </div>
 
                 <div class="boxColor">
-                    <a href="#" class="fecharBox">&times;</a>
-                    <div class="color">
-                        <input type="text" id="put2">
-                        <input type="color" id="cor2" onchange="getId(2)">                
-                    </div>
-                </div>
-
-
-                <div class="boxColor">
-                    <div class="color">
-                        <input type="color" id="cor3" onchange="getId(3)">
-                        <input type="text" id="put3">
+                    <a class="fecharBox" onclick="closeBox()"><img src="images/excluir.png"></a>
+                    <div class="color flex-column">
+                        <input type="text" id="put3" onchange="changeColor(id)">
+                        <input class="colorType"  type="color" id="cor3" onchange="getId(3)">
                     </div>
                 </div>
 
                 <div class="boxColor">
-                    <div class="color">
-                        <input type="color" id="cor4" onchange="getId(4)">
+                    <a class="fecharBox" onclick="closeBox()"><img src="images/excluir.png"></a>
+                    <div class="color flex-column">
                         <input type="text" id="put4">
+                        <input type="color" id="cor4" onchange="getId(4)">
                     </div>
                 </div>
 
                 <div class="boxColor">
-                    <div class="color">
-                        <input type="color" id="cor5" onchange="getId(5)">
+                    <a class="fecharBox" onclick="closeBox()"><img src="images/excluir.png"></a>
+                    <div class="color flex-column">
                         <input type="text" id="put5">
+                        <input type="color" id="cor5" onchange="getId(5)">
                     </div>
                 </div>
 
@@ -75,7 +78,6 @@
         
             
     </main>
-
 <script src="main.js"></script>
 </body>
 </html>

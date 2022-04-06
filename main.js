@@ -38,3 +38,20 @@ function closeBox(){
     const box = document.getElementsByClassName('boxColor-display')
         box[0].setAttribute('class','boxColor')
 }
+
+document.getElementById("fecha").addEventListener("mouseover", function() {
+    document.getElementById("container").style.display = "none";
+  });
+
+
+document.getElementById("fecha").addEventListener("mouseout", function() {
+    document.getElementById("container").style.display = "flex";
+  });
+
+
+
+
+
+
+
+

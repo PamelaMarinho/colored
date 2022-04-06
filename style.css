@@ -183,3 +183,8 @@ a:link, a:visited{
     width: 20px;
     margin: 20px 0 0 20px;
 }
+
+.fecharBox>img{
+    width: 10px;
+    margin: 5px 0 0 5px;
+}

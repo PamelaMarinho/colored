@@ -137,8 +137,6 @@ select>option:focus{
     align-items: center;
 }
 
-
-
 [type='color']{
     position: relative;
     height: 25%;
@@ -189,16 +187,56 @@ a:link, a:visited{
     margin: 5px 0 0 5px;
 }
 
-/* @media (max-width: 1170px){
+@media (max-width: 1170px){
     .container{
         background-color: #955656;
         flex-direction: column;
         height: fit-content;
         width: fit-content;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .main_box{
         flex-direction: column;
     }
 
-} */
+    [type='color']{
+        height: 35%;
+        width: 90%;
+    }
+
+    [type='text']{
+        height: 35%;
+        width: 82%;
+    }
+
+    .boxColor{
+        height: 140px;
+    }
+
+    .boxColor-display,.boxColor-display-fixo{
+        height: 140px;
+        width:  200px;
+    }
+
+    .fecharBox>img{
+        width: 18px;
+        margin: 5px 0 0 5px;
+    }
+
+    .button-main{
+        height: 140px;
+        width:  200px;
+        margin: auto 0px;
+    }
+
+    .box-nav{
+        height: 140px;
+        width:  200px;
+        justify-content: space-between;
+    }
+
+
+} 

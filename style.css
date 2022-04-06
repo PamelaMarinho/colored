@@ -68,8 +68,6 @@ a{
     align-items: center;
     font-size: var(--font-word); 
     font-family: 'Roboto', sans-serif;
-   
-
 }
 
 .seletor>select{
@@ -108,8 +106,6 @@ select>option:focus{
     margin: auto 20px;
 }
 
-
-
 .boxColor{
     display: none;
     flex-direction: column;
@@ -120,7 +116,7 @@ select>option:focus{
     margin: var(--margin-box);
 }
 
-.boxColor-display{
+.boxColor-display,.boxColor-display-fixo{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -154,7 +150,6 @@ select>option:focus{
     cursor: pointer;
 }
 
-
 a:link, a:visited{
     text-decoration: none;
 }
@@ -175,7 +170,11 @@ a:link, a:visited{
     display: flex;
     color: #2b2b2b;
     align-self: flex-end;
-    
     width: fit-content;
     margin: 10px 15px 0 0 ;
+}
+
+.fixo{
+    color: #008f9900;
+    cursor:default
 }

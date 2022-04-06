@@ -33,3 +33,8 @@ function a(){
 }
 
 a()
+
+function closeBox(){
+    const box = document.getElementsByClassName('boxColor-display')
+        box[0].setAttribute('class','boxColor')
+}

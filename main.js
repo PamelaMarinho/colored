@@ -1,5 +1,18 @@
 let listColor = []
 
+/************ display do box principal ******************/
+
+document.getElementById("fecha").addEventListener("mouseover", function() {
+    document.getElementById("container").style.display = "none";
+  });
+
+
+document.getElementById("fecha").addEventListener("mouseout", function() {
+    document.getElementById("container").style.display = "flex";
+  });
+
+/************ display do box de cores ******************/
+
 function colorBox(){
         const box = document.getElementsByClassName('boxColor')
         box[0].setAttribute('class','boxColor-display')
@@ -21,6 +34,8 @@ function getColor(id){
         changeBg()
 }
 
+/************ altera background ******************/
+
 function changeBg(){
     const colors = docum.getElementsByClassName('boxColor-display')
     const bg = document.getElementById('background')
@@ -39,14 +54,7 @@ function closeBox(){
         box[0].setAttribute('class','boxColor')
 }
 
-document.getElementById("fecha").addEventListener("mouseover", function() {
-    document.getElementById("container").style.display = "none";
-  });
 
-
-document.getElementById("fecha").addEventListener("mouseout", function() {
-    document.getElementById("container").style.display = "flex";
-  });
 
 
 

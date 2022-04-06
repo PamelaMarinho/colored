@@ -189,7 +189,7 @@ a:link, a:visited{
     margin: 5px 0 0 5px;
 }
 
-@media (max-width: 1170px){
+/* @media (max-width: 1170px){
     .container{
         background-color: #955656;
         flex-direction: column;
@@ -201,4 +201,4 @@ a:link, a:visited{
         flex-direction: column;
     }
 
-}
+} */

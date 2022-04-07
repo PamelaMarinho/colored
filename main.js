@@ -34,7 +34,7 @@ function colorBox(){
 }
 
 function changeColor(id){
-    const inputColor = document.getElementById(`cor${id}`).value;
+    let inputColor = document.getElementById(`cor${id}`).value;
     listColor.splice(id-1,1,inputColor)
     document.getElementById(`put${id}`).value = inputColor  
     changeBg()  
@@ -46,8 +46,8 @@ function changeBg(){
      
  document.getElementById('gradient').addEventListener('change',function(){
     let select = document.getElementById('gradient').selectedIndex;
-    let value = document.getElementById('gradient').options;
-    let item = document.getElementById('gradient').classList.item(0)
+    var value = document.getElementById('gradient').options;
+    var item = document.getElementById('gradient').classList.item(0)
     document.getElementById('gradient').classList.replace(item,value[select].text)
  console.log(document.getElementById('gradient'))
 })
@@ -74,10 +74,16 @@ function closeBox(){
 /************ fecha box color*****   *************/
 
 function closeBox(id){
+    //console.log(listColor)
+    let codeColor = document.querySelector(`#put${id}`)
     listColor.splice(id-1,1)
-    const box = document.getElementById(`b${id}`)
-/*     console.log(id,box) */
-    box.classList.replace('boxcolor-display','boxColor')
+    //console.log(listColor)
+    document.getElementById(`put${id}`).value = "#000000"
+    document.getElementById(`cor${id}`).value = "#000000"
+    /* console.log(codeColor.value) */
+    let box = document.querySelector(`#b${id}`)
+    box.className='boxColor'
+    changeBg()
 }
 
 

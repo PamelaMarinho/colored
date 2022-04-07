@@ -1,11 +1,26 @@
 let listColor = []
 
+
+/************ setta cor default ******************/
+
+async function defaultColor(){
+
+    const inputColor = document.getElementById(`cor1`).value 
+    listColor.splice(0,1,inputColor)    
+    document.getElementById('put1').value = inputColor
+    
+    const inputColor2 = document.getElementById(`cor2`).value 
+    listColor.splice(1,1,inputColor)
+    document.getElementById(`put2`).value = inputColor2
+
+    changeColor(1)
+    await changeColor(2)
+}
 /************ display do box principal ******************/
 
 document.getElementById("fecha").addEventListener("mouseover", function() {
     document.getElementById("container").style.display = "none";
   });
-
 
 document.getElementById("fecha").addEventListener("mouseout", function() {
     document.getElementById("container").style.display = "flex";
@@ -18,60 +33,51 @@ function colorBox(){
         box[0].setAttribute('class','boxColor-display')
 }
 
-function getId(id){
-    getColor(id)
+function changeColor(id){
+    const inputColor = document.getElementById(`cor${id}`).value;
+    listColor.splice(id-1,1,inputColor)
+    document.getElementById(`put${id}`).value = inputColor  
+    changeBg()  
 }
 
-function getColor(id){
-    
-    const inputColor = document.getElementById(`cor${id}`).value 
-
-    console.log('antes',listColor)
-    
-     listColor.splice(id-1,1,inputColor)
-    //console.log(id-1,inputColor)
-
-    document.getElementById(`put${id}`).value = inputColor
-    
-    changeBg()
-    
-    //console.log('depois',listColor)
-
-/*     const aj =  [1,2,3,6,8,5,7]
-
-aj.splice(id-1,1,inputColor)
-
-console.log(aj) */
-     
-}
-
-
-/************ altera background ******************/
+/************ altera background *****   *************/
 
 function changeBg(){
+     
+ document.getElementById('gradient').addEventListener('change',function(){
+    let select = document.getElementById('gradient').selectedIndex;
+    let value = document.getElementById('gradient').options;
+    let item = document.getElementById('gradient').classList.item(0)
+    document.getElementById('gradient').classList.replace(item,value[select].text)
+ console.log(document.getElementById('gradient'))
+})
 
-    console.log('depois',listColor)
+  console.log(document.getElementById('gradient').value )
+    const bg = document.getElementById('background')    
 
-    const colors = document.getElementsByClassName('boxColor-display')
-    const bg = document.getElementById('background')
-   // console.log([...listColor])
-    bg.style.background= `${'linear'}-gradient(to right,${[...listColor]})`
+    if(document.getElementById('gradient').value == 'LINEAR'){
+ console.log(document.getElementById('gradient'))
+
+        bg.style.background=`${'linear'}-gradient(to right,${[...listColor]})`
+    }else{
+         bg.style.background= `${'radial'}-gradient(${[...listColor]})`
+    }
+
 }
-
-function a(){
-  //  console.log(listColor)
-}
-
-a()
-
+ 
 function closeBox(){
     const box = document.getElementsByClassName('boxColor-display')
         box[0].setAttribute('class','boxColor')
 }
 
 
+/************ fecha box color*****   *************/
 
-
-
+function closeBox(id){
+    listColor.splice(id-1,1)
+    const box = document.getElementById(`b${id}`)
+/*     console.log(id,box) */
+    box.classList.replace('boxcolor-display','boxColor')
+}
 
 

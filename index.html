@@ -7,7 +7,7 @@
  <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body  onload="defaultColor()">
   <main id="background">
       <a id="fecha"><img src="images/view.png"></a>
 
@@ -18,40 +18,40 @@
                 <div class="boxColor-display-fixo">
                     <a class="fecharBox fixo">.</a>
                     <div class="color flex-column">
-                        <input type="text" id="put1" value="#0615e5">
-                        <input type="color" id="cor1" onchange="getId(1)">
+                        <input type="text" id="put1">
+                        <input type="color" id="cor1" onchange="changeColor(1)" value="#009099">
                     </div>
                 </div>
 
                 <div class="boxColor-display-fixo">
                     <a class="fecharBox fixo">a</a>
                     <div class="color flex-column">
-                        <input type="text" id="put2" value="#955656">
-                        <input type="color" id="cor2" onchange="getId(2)">
+                        <input type="text" id="put2">
+                        <input type="color" id="cor2" onchange="changeColor(2)" value="#955656">
                     </div>
                 </div>
 
-                <div class="boxColor">
-                    <a class="fecharBox" onclick="closeBox()"><img src="images/excluir.png"></a>
+                <div class="boxColor" id="b3">
+                    <a class="fecharBox" onclick="closeBox(3)" ><img  src="images/excluir.png"></a>
                     <div class="color flex-column">
-                        <input type="text" id="put3" onchange="changeColor(id)">
-                        <input class="colorType"  type="color" id="cor3" onchange="getId(3)">
+                        <input type="text" id="put3">
+                        <input class="colorType"  type="color" id="cor3" onchange="changeColor(3)">
                     </div>
                 </div>
 
-                <div class="boxColor">
-                    <a class="fecharBox" onclick="closeBox()"><img src="images/excluir.png"></a>
+                <div class="boxColor" id="b4">
+                    <a class="fecharBox" onclick="closeBox(4)"><img src="images/excluir.png"></a>
                     <div class="color flex-column">
                         <input type="text" id="put4">
-                        <input type="color" id="cor4" onchange="getId(4)">
+                        <input type="color" id="cor4" onchange="changeColor(4)">
                     </div>
                 </div>
 
-                <div class="boxColor">
+                <div class="boxColor" id="b55">
                     <a class="fecharBox" onclick="closeBox()"><img src="images/excluir.png"></a>
                     <div class="color flex-column">
                         <input type="text" id="put5">
-                        <input type="color" id="cor5" onchange="getId(5)">
+                        <input type="color" id="cor5" onchange="changeColor(5)">
                     </div>
                 </div>
 
@@ -66,9 +66,9 @@
                     <button class="button-copy">COPY</button>   
     
                     <div class="seletor">
-                        <select  name="gradient" id="gradient">
-                            <option value="linear">LINEAR</option>
-                            <option value="circular">RADIAL</option>
+                        <select id="gradient" name="gradient" class="gradient">
+                            <option class="option" value="linear" selected>LINEAR</option>
+                            <option class="option" value="radial" selected>RADIAL</option>
                         </select>
                     </div>
     

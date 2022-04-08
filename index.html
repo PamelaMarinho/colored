@@ -8,76 +8,61 @@
     <title>Document</title>
 </head>
 <body  onload="defaultColor()">
-  <main id="background">
-      <a id="fecha"><img src="images/view.png"></a>
 
+        <img id="fecha" src="/images/view.png"></img>
+
+        <div class="boxColor" id="0">
+            <a class="fecharBox" onclick="closeBox(id)" ><img  src="images/excluir.png"></a>
+            <div class="color flex-column">
+                <input type="text" id="putcor0" value="#000000">
+                <input class="colorType"  type="color" id="cor0" onchange="changeColor(id)">
+            </div>
+        </div> 
+
+  <main id="background">
+     
         <div class="container flex-row" id="container">
 
-            <div class="main_box flex-row">
-                
-                <div class="boxColor-display-fixo">
-                    <a class="fecharBox fixo">.</a>
-                    <div class="color flex-column">
-                        <input type="text" id="put1">
-                        <input type="color" id="cor1" onchange="changeColor(1)" value="#009099">
-                    </div>
-                </div>
+            <div class="main_box flex-row" id="mainbox">
 
-                <div class="boxColor-display-fixo">
-                    <a class="fecharBox fixo">a</a>
-                    <div class="color flex-column">
-                        <input type="text" id="put2">
-                        <input type="color" id="cor2" onchange="changeColor(2)" value="#955656">
+                    <div class="boxColor-display-fixo box" id="1">
+                        <a class="fecharBox fixo">.</a>
+                        <div class="color flex-column">
+                            <input type="text" id="putcor1">
+                            <input type="color" id="cor1" onchange="changeColor(1)" value="#009099">
+                        </div>
                     </div>
-                </div>
-
-                <div class="boxColor" id="b3">
-                    <a class="fecharBox" onclick="closeBox(3)" ><img  src="images/excluir.png"></a>
-                    <div class="color flex-column">
-                        <input type="text" id="put3" value="#000000">>
-                        <input class="colorType"  type="color" id="cor3" onchange="changeColor(3)">
+    
+                    <div class="boxColor-display-fixo box" id="2">
+                        <a class="fecharBox fixo">a</a>
+                        <div class="color flex-column">
+                            <input type="text" id="putcor2">
+                            <input type="color" id="cor2" onchange="changeColor(2)" value="#955656">
+                        </div>
                     </div>
-                </div>
 
-                <div class="boxColor" id="b4">
-                    <a class="fecharBox" onclick="closeBox(4)"><img src="images/excluir.png"></a>
-                    <div class="color flex-column">
-                        <input type="text" id="put4" value="#000000">
-                        <input type="color" id="cor4" onchange="changeColor(4)">
-                    </div>
-                </div>
+                    
 
-                <div class="boxColor" id="b5">
-                    <a class="fecharBox" onclick="closeBox(5)"><img src="images/excluir.png"></a>
-                    <div class="color flex-column">
-                        <input type="text" id="put5" value="#000000">>
-                        <input type="color" id="cor5" onchange="changeColor(5)">
-                    </div>
                 </div>
-
-                <div class="button-main flex-column">
+                           
+                <div class="button-mais flex-column">
                     <div class="mais"><a><img src="images/mais.png" onclick="colorBox()"></img></a></div>
                 </div>
     
-            </div>
-    
-            <div class="box-nav flex-column">
-    
-                    <button class="button-copy">COPY</button>   
-    
-                    <div class="seletor">
-                        <select id="gradient" name="gradient" class="gradient">
-                            <option class="option" value="radial" selected>RADIAL</option>
-                            <option class="option" value="linear" selected>LINEAR</option>
-                        </select>
-                    </div>
-    
-            </div>
+                <div class="box-nav flex-column">
+                        <button class="button-copy">COPY</button>   
+                        <div class="seletor">
+                            <select id="gradient" name="gradient" class="gradient">
+                                <option class="option" value="radial" onchange="getGradient()" selected>RADIAL</option>
+                                <option class="option" value="linear" onchange="getGradient()" selected>LINEAR</option>
+                            </select>
+                        </div>
+                </div>
 
         </div>
         
-            
     </main>
+
 <script src="main.js"></script>
 </body>
 </html>

@@ -96,7 +96,7 @@ select>option:focus{
     cursor: pointer;
 }
 
-.button-main{
+.button-mais{
     background-color: var(--color-button);
     height: 100%;
     width: 10vw;
@@ -177,7 +177,7 @@ a:link, a:visited{
     cursor:default
 }
 
-#fecha>img{
+#fecha{
     width: 20px;
     margin: 20px 0 0 20px;
 }
@@ -226,7 +226,7 @@ a:link, a:visited{
         margin: 5px 0 0 5px;
     }
 
-    .button-main{
+    .button-mais{
         height: 140px;
         width:  200px;
         margin: auto 0px;

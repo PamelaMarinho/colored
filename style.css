@@ -41,6 +41,14 @@ a{
     margin: 0;
 }
 
+.background-linear{
+    background-image: linear-gradient(to left);
+}
+
+.background-radial{
+    background-image: radial-gradient();
+}
+
 .container{
     width: fit-content;
     min-width: 450px;
@@ -180,6 +188,7 @@ a:link, a:visited{
 #fecha{
     width: 20px;
     margin: 20px 0 0 20px;
+    position: absolute;
 }
 
 .fecharBox>img{

@@ -29,12 +29,15 @@ document.getElementById("fecha").addEventListener("mouseout", function() {
 /************ display do novo box de cores ******************/
 
 function colorBox(){
-        let mainbox = document.getElementById('mainbox')
-        let box = document.getElementById('0')
-        let clone = box.cloneNode(true)
-        clone.setAttribute('class', 'boxColor-display box')
-        mainbox.appendChild(clone)
-        changeId()
+        let boxGroup = document.getElementsByClassName('box')
+        if(boxGroup.length <= 4){
+            let mainbox = document.getElementById('mainbox')
+            let box = document.getElementById('0')
+            let clone = box.cloneNode(true)
+            clone.setAttribute('class', 'boxColor-display box')
+            mainbox.appendChild(clone)
+            changeId()
+        }
 }
 
 /************ altera ID do novo box de cores ******************/
@@ -64,7 +67,7 @@ function changeColor(id){
         }
         document.getElementById(`put${id}`).value = inputColor
         changeBg() 
-        console.log(listColor)
+        //console.log(listColor)
 }
 
 /************ altera background ******************/
@@ -79,10 +82,10 @@ let gradient = function(){
         let item = document.getElementById('gradient').classList.item(0)
 
         if (value[select].text == 'LINEAR'){
-            console.log('linear')
+           // console.log('linear')
             document.getElementById('background').classList = 'background-linear'
         }else{
-            console.log('radial')
+           // console.log('radial')
             document.getElementById('background').classList = 'background-radial'
         }
         changeBg()
@@ -109,7 +112,7 @@ function closeBox(id){
     let codeColor = document.getElementById(`putcor${id}`).value
     let index = listColor.indexOf(codeColor)
     listColor.splice(index,1)
-    console.log( codeColor,listColor )
+  //  console.log( codeColor,listColor )
     document.getElementById(id).remove()
     changeBg()
 }

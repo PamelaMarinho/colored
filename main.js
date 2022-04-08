@@ -78,13 +78,14 @@ let gradient = function(){
         let value = document.getElementById('gradient').options;
         let item = document.getElementById('gradient').classList.item(0)
 
-        if (value[select].text == 'RADIAL'){
-            console.log('radial')
-            document.getElementById('background').classList = 'background-radial'
-        }else{
+        if (value[select].text == 'LINEAR'){
             console.log('linear')
             document.getElementById('background').classList = 'background-linear'
+        }else{
+            console.log('radial')
+            document.getElementById('background').classList = 'background-radial'
         }
+        changeBg()
     }
 
 

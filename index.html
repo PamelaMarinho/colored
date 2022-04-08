@@ -9,7 +9,7 @@
 </head>
 <body  onload="defaultColor()">
 
-        <img id="fecha" src="/images/view.png"></img>
+        <img id="fecha" src="images/view.png"></img>
 
         <div class="boxColor" id="0">
             <a class="fecharBox" onclick="closeBox(id)" ><img  src="images/excluir.png"></a>
@@ -50,7 +50,7 @@
                 <div class="box-nav flex-column">
                         <button class="button-copy">COPY</button>   
                         <div class="seletor">
-                            <select id="gradient" name="gradient" class="gradient">
+                            <select id="gradient" name="gradient" onchange="gradient()" class="gradient">
                                 <option class="option" value="radial" selected>RADIAL</option>
                                 <option class="option" value="linear" selected>LINEAR</option>
                             </select>

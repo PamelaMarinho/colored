@@ -1,4 +1,4 @@
-Gerador de background com mudança de gradient.
+Gerador de background com mudança de gradiente.
 
 Acesse aqui: https://pamelamarinho.github.io/colored/
 

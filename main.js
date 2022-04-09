@@ -50,6 +50,7 @@ function createBox(){
             clone.setAttribute('class', 'boxColor-display box')
             mainbox.appendChild(clone)
             createId()
+            gradient()
         }
 
 }

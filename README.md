@@ -13,6 +13,6 @@ Tenha um visão do seu background antes de aplicar no projeto. Selecione as core
   
   <hr>
   
-  Trabalho conjunto entre <a href="https://github.com/PamelaMarinho">Pamela Marinho</a> que desenvolveu Javascript e <a href="https://github.com/alreadymimi">Mimi Kamioka</a> com CSS/HTML.
+  Trabalho conjunto entre <a href="https://github.com/PamelaMarinho">Pamela Marinho</a> (Javascript) e <a href="https://github.com/alreadymimi">Mimi Kamioka</a> (CSS/HTML).
   
   

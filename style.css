@@ -33,28 +33,20 @@ a{
 #background{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(
+/*     background-image: linear-gradient(
         135deg,
         #009099,
         #955656
-    );
+    ); */
     margin: 0;
 }
-
-.background-linear{
-    background-image: linear-gradient(to left);
-}
-
-/* .background-radial{
-    background-image: radial-gradient();
-} */
 
 .container{
     width: fit-content;
     min-width: 450px;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
+    top: 50%;   
     left: 50%;
     padding: 10px 10px;
     background-color: #ebebeb;
@@ -76,6 +68,14 @@ a{
     align-items: center;
     font-size: var(--font-word); 
     font-family: 'Roboto', sans-serif;
+}
+
+.seletor{
+    overflow: hidden;
+}
+
+#copy{
+    display: none;
 }
 
 .seletor>select{
@@ -198,7 +198,7 @@ a:link, a:visited{
 
 @media (max-width: 1170px){
     .container{
-        background-color: #955656;
+        background-color: #95565600;
         flex-direction: column;
         height: fit-content;
         width: fit-content;

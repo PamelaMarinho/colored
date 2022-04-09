@@ -7,15 +7,15 @@
  <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body  onload="defaultColor()">
+<body onload="defaultColor('cor1','#009099'),defaultColor('cor2','#955656'),gradDefault('onload')">
 
         <img id="fecha" src="images/view.png"></img>
 
         <div class="boxColor" id="0">
             <a class="fecharBox" onclick="closeBox(id)" ><img  src="images/excluir.png"></a>
             <div class="color flex-column">
-                <input type="text" id="putcor0">
-                <input type="color" id="cor0" onchange="changeColor(id)" value="#000000">
+                <input type="text" id="putcora">
+                <input type="color" id="a" onchange="changeColor(id,value)" value="#000000">
             </div>
         </div> 
 
@@ -29,28 +29,28 @@
                         <a class="fecharBox fixo">.</a>
                         <div class="color flex-column">
                             <input type="text" id="putcor1">
-                            <input type="color" id="cor1" onchange="changeColor(id)" value="#009099">
+                            <input type="color" id="cor1" onchange="changeColor(id,value)" value="#000000">
                         </div>
                     </div>
     
                     <div class="boxColor-display-fixo box" id="2">
-                        <a class="fecharBox fixo">a</a>
+                        <a class="fecharBox fixo">.</a>
                         <div class="color flex-column">
                             <input type="text" id="putcor2">
-                            <input type="color" id="cor2" onchange="changeColor(id)" value="#955656">
+                            <input type="color" id="cor2" onchange="changeColor(id,value)" value="#000000">
                         </div>
                     </div>
 
                 </div>
                            
                 <div class="button-mais flex-column">
-                    <div class="mais"><a><img src="images/mais.png" onclick="colorBox()"></img></a></div>
+                    <div class="mais"><a><img src="images/mais.png" onclick="createBox()"></img></a></div>
                 </div>
     
                 <div class="box-nav flex-column">
-                        <button class="button-copy">COPY</button>   
-                        <div class="seletor">
-                            <select id="gradient" name="gradient" onchange="gradient()" class="gradient">
+                        <button onclick="copy()" class="button-copy">COPY</button>   
+                        <div class="seletor flex-column">
+                            <select id="gradient" class="gradient" name="gradient" onchange="gradient()">
                                 <option class="option" value="radial" selected>RADIAL</option>
                                 <option class="option" value="linear" selected>LINEAR</option>
                             </select>
@@ -60,6 +60,7 @@
         </div>
         
     </main>
+    <input id="copy">
 
 <script src="main.js"></script>
 </body>

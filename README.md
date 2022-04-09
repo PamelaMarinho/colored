@@ -4,7 +4,6 @@ Tenha um visão do seu background antes de aplicar no projeto. Selecione as core
 
  ![ezgif com-gif-maker](https://user-images.githubusercontent.com/40448360/162593363-a8bf6509-2ffc-4c01-a232-bcdae9766258.gif)
  
-  <hr>
  
  Desenvolvido com as tecnologias:
 
@@ -14,5 +13,6 @@ Tenha um visão do seu background antes de aplicar no projeto. Selecione as core
   
   <hr>
   
-  Trabalho conjunto com Javascript desenvolvido pela <a href="https://github.com/PamelaMarinho">Pamela Marinho</a> e CSS/HTML pela <a href="https://github.com/alreadymimi">Mimi Kamioka</a>
+  Trabalho conjunto entre <a href="https://github.com/PamelaMarinho">Pamela Marinho</a> que desenvolveu Javascript e <a href="https://github.com/alreadymimi">Mimi Kamioka</a> com CSS/HTML.
+  
   

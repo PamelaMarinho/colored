@@ -2,6 +2,7 @@ let listColor = []
 
 function gradDefault(){
     document.getElementById('background').style.background=`linear-gradient(135deg,${[...listColor]})`
+    gradient()
 }
 
 /************ setta cor default ******************/
@@ -52,7 +53,6 @@ function createBox(){
             createId()
             gradient()
         }
-
 }
 
 /************ altera ID do novo box de cores ******************/

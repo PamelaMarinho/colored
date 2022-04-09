@@ -1,5 +1,7 @@
 Gerador de background com mudança de gradient.
 
+Acesse aqui: https://pamelamarinho.github.io/colored/
+
 Tenha um visão do seu background antes de aplicar no projeto. Selecione as cores, altere o gradient e copie o código.
 
  ![ezgif com-gif-maker](https://user-images.githubusercontent.com/40448360/162593363-a8bf6509-2ffc-4c01-a232-bcdae9766258.gif)
